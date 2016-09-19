@@ -23,121 +23,121 @@ Partial Class frmMain
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.rdoPremium = New System.Windows.Forms.RadioButton()
+        Me.rdoDeluxe = New System.Windows.Forms.RadioButton()
+        Me.rdoStandard = New System.Windows.Forms.RadioButton()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton5 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton6 = New System.Windows.Forms.RadioButton()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.rdoPink = New System.Windows.Forms.RadioButton()
+        Me.rdoRed = New System.Windows.Forms.RadioButton()
+        Me.rdoBlue = New System.Windows.Forms.RadioButton()
+        Me.chkFoldable = New System.Windows.Forms.CheckBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblTotal = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnCalc = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.RadioButton3)
-        Me.GroupBox1.Controls.Add(Me.RadioButton2)
-        Me.GroupBox1.Controls.Add(Me.RadioButton1)
+        Me.GroupBox1.Controls.Add(Me.rdoPremium)
+        Me.GroupBox1.Controls.Add(Me.rdoDeluxe)
+        Me.GroupBox1.Controls.Add(Me.rdoStandard)
         Me.GroupBox1.Location = New System.Drawing.Point(13, 13)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(123, 146)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "GroupBox1"
+        Me.GroupBox1.Text = "Type:"
+        '
+        'rdoPremium
+        '
+        Me.rdoPremium.AutoSize = True
+        Me.rdoPremium.Location = New System.Drawing.Point(21, 105)
+        Me.rdoPremium.Name = "rdoPremium"
+        Me.rdoPremium.Size = New System.Drawing.Size(65, 17)
+        Me.rdoPremium.TabIndex = 2
+        Me.rdoPremium.TabStop = True
+        Me.rdoPremium.Text = "&Premium"
+        Me.rdoPremium.UseVisualStyleBackColor = True
+        '
+        'rdoDeluxe
+        '
+        Me.rdoDeluxe.AutoSize = True
+        Me.rdoDeluxe.Location = New System.Drawing.Point(21, 68)
+        Me.rdoDeluxe.Name = "rdoDeluxe"
+        Me.rdoDeluxe.Size = New System.Drawing.Size(58, 17)
+        Me.rdoDeluxe.TabIndex = 1
+        Me.rdoDeluxe.TabStop = True
+        Me.rdoDeluxe.Text = "&Deluxe"
+        Me.rdoDeluxe.UseVisualStyleBackColor = True
+        '
+        'rdoStandard
+        '
+        Me.rdoStandard.AutoSize = True
+        Me.rdoStandard.Location = New System.Drawing.Point(21, 33)
+        Me.rdoStandard.Name = "rdoStandard"
+        Me.rdoStandard.Size = New System.Drawing.Size(68, 17)
+        Me.rdoStandard.TabIndex = 0
+        Me.rdoStandard.TabStop = True
+        Me.rdoStandard.Text = "&Standard"
+        Me.rdoStandard.UseVisualStyleBackColor = True
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.RadioButton6)
-        Me.GroupBox2.Controls.Add(Me.RadioButton5)
-        Me.GroupBox2.Controls.Add(Me.RadioButton4)
+        Me.GroupBox2.Controls.Add(Me.rdoPink)
+        Me.GroupBox2.Controls.Add(Me.rdoRed)
+        Me.GroupBox2.Controls.Add(Me.rdoBlue)
         Me.GroupBox2.Location = New System.Drawing.Point(142, 13)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(126, 146)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "GroupBox2"
+        Me.GroupBox2.Text = "Color:"
         '
-        'RadioButton1
+        'rdoPink
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(21, 33)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton1.TabIndex = 0
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "RadioButton1"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.rdoPink.AutoSize = True
+        Me.rdoPink.Location = New System.Drawing.Point(6, 105)
+        Me.rdoPink.Name = "rdoPink"
+        Me.rdoPink.Size = New System.Drawing.Size(46, 17)
+        Me.rdoPink.TabIndex = 2
+        Me.rdoPink.TabStop = True
+        Me.rdoPink.Text = "Pin&k"
+        Me.rdoPink.UseVisualStyleBackColor = True
         '
-        'RadioButton2
+        'rdoRed
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(21, 68)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton2.TabIndex = 1
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "RadioButton2"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.rdoRed.AutoSize = True
+        Me.rdoRed.Location = New System.Drawing.Point(6, 68)
+        Me.rdoRed.Name = "rdoRed"
+        Me.rdoRed.Size = New System.Drawing.Size(45, 17)
+        Me.rdoRed.TabIndex = 1
+        Me.rdoRed.TabStop = True
+        Me.rdoRed.Text = "&Red"
+        Me.rdoRed.UseVisualStyleBackColor = True
         '
-        'RadioButton3
+        'rdoBlue
         '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(21, 105)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton3.TabIndex = 2
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "RadioButton3"
-        Me.RadioButton3.UseVisualStyleBackColor = True
+        Me.rdoBlue.AutoSize = True
+        Me.rdoBlue.Location = New System.Drawing.Point(6, 33)
+        Me.rdoBlue.Name = "rdoBlue"
+        Me.rdoBlue.Size = New System.Drawing.Size(46, 17)
+        Me.rdoBlue.TabIndex = 0
+        Me.rdoBlue.TabStop = True
+        Me.rdoBlue.Text = "&Blue"
+        Me.rdoBlue.UseVisualStyleBackColor = True
         '
-        'RadioButton4
+        'chkFoldable
         '
-        Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Location = New System.Drawing.Point(6, 33)
-        Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton4.TabIndex = 0
-        Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "RadioButton4"
-        Me.RadioButton4.UseVisualStyleBackColor = True
-        '
-        'RadioButton5
-        '
-        Me.RadioButton5.AutoSize = True
-        Me.RadioButton5.Location = New System.Drawing.Point(6, 68)
-        Me.RadioButton5.Name = "RadioButton5"
-        Me.RadioButton5.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton5.TabIndex = 1
-        Me.RadioButton5.TabStop = True
-        Me.RadioButton5.Text = "RadioButton5"
-        Me.RadioButton5.UseVisualStyleBackColor = True
-        '
-        'RadioButton6
-        '
-        Me.RadioButton6.AutoSize = True
-        Me.RadioButton6.Location = New System.Drawing.Point(6, 105)
-        Me.RadioButton6.Name = "RadioButton6"
-        Me.RadioButton6.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton6.TabIndex = 2
-        Me.RadioButton6.TabStop = True
-        Me.RadioButton6.Text = "RadioButton6"
-        Me.RadioButton6.UseVisualStyleBackColor = True
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(294, 46)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(81, 17)
-        Me.CheckBox1.TabIndex = 2
-        Me.CheckBox1.Text = "CheckBox1"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.chkFoldable.AutoSize = True
+        Me.chkFoldable.Location = New System.Drawing.Point(294, 46)
+        Me.chkFoldable.Name = "chkFoldable"
+        Me.chkFoldable.Size = New System.Drawing.Size(66, 17)
+        Me.chkFoldable.TabIndex = 2
+        Me.chkFoldable.Text = "&Foldable"
+        Me.chkFoldable.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -159,37 +159,38 @@ Partial Class frmMain
         Me.lblTotal.Text = " "
         Me.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Button1
+        'btnCalc
         '
-        Me.Button1.Location = New System.Drawing.Point(142, 210)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 5
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnCalc.Location = New System.Drawing.Point(164, 210)
+        Me.btnCalc.Name = "btnCalc"
+        Me.btnCalc.Size = New System.Drawing.Size(75, 23)
+        Me.btnCalc.TabIndex = 5
+        Me.btnCalc.Text = "&Calculate"
+        Me.btnCalc.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnExit
         '
-        Me.Button2.Location = New System.Drawing.Point(263, 210)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 6
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnExit.Location = New System.Drawing.Point(285, 210)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(75, 23)
+        Me.btnExit.TabIndex = 6
+        Me.btnExit.Text = "E&xit"
+        Me.btnExit.UseVisualStyleBackColor = True
         '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(410, 268)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnExit)
+        Me.Controls.Add(Me.btnCalc)
         Me.Controls.Add(Me.lblTotal)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.CheckBox1)
+        Me.Controls.Add(Me.chkFoldable)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "frmMain"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Mats-R-Us"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -201,16 +202,16 @@ Partial Class frmMain
     End Sub
 
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents RadioButton3 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents rdoPremium As RadioButton
+    Friend WithEvents rdoDeluxe As RadioButton
+    Friend WithEvents rdoStandard As RadioButton
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents RadioButton6 As RadioButton
-    Friend WithEvents RadioButton5 As RadioButton
-    Friend WithEvents RadioButton4 As RadioButton
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents rdoPink As RadioButton
+    Friend WithEvents rdoRed As RadioButton
+    Friend WithEvents rdoBlue As RadioButton
+    Friend WithEvents chkFoldable As CheckBox
     Friend WithEvents Label1 As Label
     Friend WithEvents lblTotal As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnCalc As Button
+    Friend WithEvents btnExit As Button
 End Class
